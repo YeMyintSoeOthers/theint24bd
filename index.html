@@ -51,8 +51,7 @@ span
 	<audio controls autoplay id="audio">  
         <source src="song1.mp3" type="audio/ogg">  
         <source src="song1.mp3" type="audio/mpeg">  
-	</audio>  
-	<!-- <button onclick="play()">Play Audio</button> -->
+	</audio>
   <script type="text/javascript">
   	document.addEventListener("mousemove", function(e){
   		var body = document.querySelector('body');
@@ -62,8 +61,8 @@ span
   		heart.style.left = x+'px';
   		heart.style.top = y+'px';
   		var size = Math.random() * 100;
-  		heart.style.width = 100 + size+'px';
-  		heart.style.height = 75 + size+'px';
+  		heart.style.width = 400 + size+'px';
+  		heart.style.height = 330 + size+'px';
   		body.appendChild(heart);
 
       setTimeout(function(){

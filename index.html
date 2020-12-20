@@ -41,18 +41,18 @@ span
 		filter: hue-rotate(720deg);
 	}
 }
-
-/* mp3  */
-audio {
-	/* display: none; */
+#audio{
+	margin: 100px;
 }
+
   </style>
 </head>
-<body>
+<body id="body">
 	<audio controls autoplay id="audio">  
         <source src="song1.mp3" type="audio/ogg">  
         <source src="song1.mp3" type="audio/mpeg">  
-    </audio>  
+	</audio>  
+	<!-- <button onclick="play()">Play Audio</button> -->
   <script type="text/javascript">
   	document.addEventListener("mousemove", function(e){
   		var body = document.querySelector('body');
@@ -70,12 +70,7 @@ audio {
         heart.remove();
       },2000)
   	})
-
-	  //mp3
-	//   window.onload = function() {
-	// 	document.getElementById('audio').click(); 
-	//   }
-	  
+ 
   </script>
 </body>
 </html>
